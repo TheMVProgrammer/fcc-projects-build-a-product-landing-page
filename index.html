@@ -6,8 +6,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Build a Product Landing Page</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+    <header id="header" class="header-container">
+        <img src="logo-hoopers.png" alt="hoopers logo" id="header-img"/> <!--Logo-->
+        <nav id="nav-bar">
+            <ul class="nav-items">
+                <li class="nav-item"><a href="#get_started-section" class="nav-link">Get Started</a></li>
+                <li class="nav-item"><a href="#basketballs-section" class="nav-link">Basketballs</a></li>
+                <li class="nav-item"><a href="#hoops-section" class="nav-link">Hoops</a></li>
+                <li class="nav-item"><a href="#backboards_&_rims-section" class="nav-link">Backboards & Rims</a></li>
+                <li class="nav-item"><a href="#accesories-section" class="nav-link">Accesories</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main" class="main-container">
+        <section id="get_started-section">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/hg3r9qd7tvk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="intro">
+                <h1>BASKETBALL GEAR & EQUIPMENT</h1>
+                <p>At Hoopers, we offer basketball equipment to suit everyone's needs. We have a wide selection of basketball gear, hoops, and more for different skill levels and budgets.</p>
+            </div>
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                <input type="submit" id="submit" value="Get Started">
+            </form>
+        </section>
+        <div class="products-main-title">
+            <h2>Products</h2>
+        </div>
+        <section id="basketballs-section">
+            <h3 class="section-title">Basketballs</h3>
+            <div class="product-items">
+                <div class="product-item">
+                    <div class="product-item-img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="product-item-desc">
+                        <h4 class="product-title"></h4>
+                        <p class="product-price"></p>
+                    </div>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+            </div>
+        </section>
+        <section id="hoops-section">
+            <h3 class="section-title">Hoops</h3>
+            <div class="product-items">
+                <div class="product-item">
+                    <div class="product-item-img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="product-item-desc">
+                        <h4 class="product-title"></h4>
+                        <p class="product-price"></p>
+                    </div>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+            </div>
+        </section>
+        <section id="backboards_&_rims-section">
+            <h3 class="section-title">Backboards & Rims</h3>
+            <div class="product-items">
+                <div class="product-item">
+                    <div class="product-item-img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="product-item-desc">
+                        <h4 class="product-title"></h4>
+                        <p class="product-price"></p>
+                    </div>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+            </div>
+        </section>
+        <section id="accesories-section">
+            <h3 class="section-title">Accesories</h3>
+            <div class="product-items">
+                <div class="product-item">
+                    <div class="product-item-img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="product-item-desc">
+                        <h4 class="product-title"></h4>
+                        <p class="product-price"></p>
+                    </div>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>&#169; 2022 Hoopers.com</p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -20,7 +20,7 @@ html, body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--primary-color);
     padding-top: 80px;
-    scroll-padding-top: 150px;
+    scroll-padding-top: 100px;
     color: var(--secondary-color);
 }
 
@@ -42,12 +42,13 @@ li {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
     align-items: center;
     position: fixed;
     top: 0;
+    text-align: center;
+    padding-bottom: 1rem;
 }
 
 #nav-bar img {
@@ -104,7 +105,11 @@ li {
 }
 
 #get_started-section iframe {
-    margin: 3rem;
+    margin: 2rem;
+}
+
+.section {
+    height: 100vh;
 }
 
 .vl {
@@ -190,6 +195,58 @@ li {
 
 /*get-started end*/
 
+/*products-section*/
+
+#basketballs-section {
+    margin-top: -12rem;
+}
+
+.product-section {
+    
+}
+
+.product-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 4rem;
+    margin: 0 2rem;
+    padding: 0 2rem;
+}
+
+.product-item {
+    width: 100%;
+    border: 1px solid var(--secondary-color);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.product-item-img {
+    width: 100%;
+}
+
+.product-item-img img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.product-item-desc {
+
+}
+
+.product-item-desc .product-title {
+    
+}
+
+.product-item-desc .product-price {
+
+}
+
+.product-item .buy-btn {
+
+}
+
+/*products-section end*/
+
 main {
     font-size: 1.6rem;
 }
@@ -219,14 +276,10 @@ footer {
 
     /*get-started-section*/
 
-    #get_started-section {
-        align-items: center;
-    }
-
     #get_started-section iframe {
         width: 90%;
-        height: 80%;
-
+        height: 60%;
+        margin: -1rem;
     }
 
     .get-started-desc .intro {    
@@ -321,6 +374,7 @@ footer {
     }
 
     .intro h1 {
+        text-align: center;
         font-size: 2rem;
         padding: 0 2rem;
     }
@@ -396,7 +450,6 @@ footer {
         margin-top: 0;
         padding: 9rem 3rem 0 2rem;
         font-size: 2.5rem;
-        text-align: center;
     }
 
     .intro p {
@@ -418,6 +471,7 @@ footer {
 }
 
 @media only screen and (max-width: 350px) {
+
     .intro h1 {
         font-size: 2rem;
     }

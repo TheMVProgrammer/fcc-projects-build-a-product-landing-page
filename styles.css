@@ -105,8 +105,10 @@ li {
 #get_started-section {
     display: grid;
     grid-template-columns: 1fr 2px 1fr;
-    align-items: start;
+    align-items: center;
     justify-items: center;
+    margin-top: -16rem;
+    height: 100vh;
 }
 
 #get_started-section iframe {
@@ -216,7 +218,7 @@ li {
 }
 
 #basketballs-section {
-    margin-top: -12rem;
+    margin-top: 0;
 }
 
 .product-items {
@@ -372,17 +374,6 @@ footer {
 
 @media only screen and (max-width: 1200px) {
     /*nav-bar*/
-    
-    .product-items {
-        /* grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        margin-bottom: 15rem; */
-    }
-
-    .product-item {
-        /* gap: 10rem; */
-        /* grid-column: span 2; */
-    }
 
     .nav-item {
         padding: .7rem 1rem;
@@ -402,7 +393,7 @@ footer {
 
     #get_started-section iframe {
         width: 90%;
-        height: 60%;
+        height: 40%;
         margin: -1rem;
     }
 
@@ -455,6 +446,11 @@ footer {
 }
 
 @media only screen and (max-width: 767px) {
+
+    html, body {
+        scroll-padding-top: 150px;
+    }
+
     /*nav-bar*/
 
     #nav-bar {
@@ -484,12 +480,7 @@ footer {
     /*get-started-section*/
  
     #get_started-section {
-        margin-top: 2rem;
-    }
-
-    #get_started-section iframe {
-        width: 90%;
-        height: 60%;
+        margin-top: -7rem;
     }
 
     .intro {
@@ -522,9 +513,32 @@ footer {
     }
 
     /*get-started-section end*/
+
+    /*footer-section*/
+
+    #footer {
+        height: 140px;
+        display: flex;
+    }
+
+    .footer-links ul{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .footer-links ul li{
+        padding: .5rem;
+    }
+
+    /*footer-section end*/
 }
 
 @media only screen and (max-width: 520px) {
+
+    html, body {
+        scroll-padding-top: 220px;
+    }
+
     /*nav-bar*/
 
     #nav-bar {
@@ -559,6 +573,8 @@ footer {
         grid-template-rows: 70vh 70vh;
         align-items: center;
         justify-items: center;
+        margin-bottom: 20rem;
+        margin-top: 2rem;
     }
     
     .get-started-desc {
@@ -566,7 +582,10 @@ footer {
     }
 
     #get_started-section iframe {
-        margin: 3rem;
+        height: 50%;
+        align-self: start;
+        padding-top: 5rem;
+
     }
     
     .intro h1 {
@@ -591,6 +610,22 @@ footer {
 
     /*get-started-section end*/
 
+    /*footer-section*/
+
+    #footer {
+        flex-direction: column;
+    }
+
+    #footer .social-icons {
+        justify-content: center;
+    }
+
+    #footer .footer-links ul {
+        align-items: center;
+    }
+
+    /*footer-section end*/
+
 }
 
 @media only screen and (max-width: 350px) {
@@ -605,6 +640,10 @@ footer {
 
     #form input[type=submit] {
         margin-top: 1rem;
+    }
+
+    .footer-links {
+        text-align: center;
     }
 }
 
